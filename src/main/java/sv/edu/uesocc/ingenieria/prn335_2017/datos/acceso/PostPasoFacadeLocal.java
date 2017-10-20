@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.PostPaso;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.PostPaso;
  * @author juancarlos
  */
 @Local
-public interface PostPasoFacadeLocal {
+public interface PostPasoFacadeLocal extends AbstractInterface<PostPaso>{
 
-    boolean create(PostPaso postPaso);
-
-    boolean edit(PostPaso postPaso);
-
-    boolean remove(PostPaso postPaso);
-
-    PostPaso find(Object id);
-
-    List<PostPaso> findAll();
-
-    List<PostPaso> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

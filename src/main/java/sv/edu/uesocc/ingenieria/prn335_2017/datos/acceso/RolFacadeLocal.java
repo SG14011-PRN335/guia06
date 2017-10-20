@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Rol;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Rol;
  * @author juancarlos
  */
 @Local
-public interface RolFacadeLocal {
+public interface RolFacadeLocal extends AbstractInterface<Rol>{
 
-    boolean create(Rol rol);
-
-    boolean edit(Rol rol);
-
-    boolean remove(Rol rol);
-
-    Rol find(Object id);
-
-    List<Rol> findAll();
-
-    List<Rol> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

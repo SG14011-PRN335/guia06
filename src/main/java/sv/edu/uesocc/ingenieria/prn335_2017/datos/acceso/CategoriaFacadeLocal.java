@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Categoria;
 
@@ -14,20 +13,7 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Categoria;
  * @author juancarlos
  */
 @Local
-public interface CategoriaFacadeLocal {
+public interface CategoriaFacadeLocal extends AbstractInterface<Categoria>{
 
-    boolean create(Categoria categoria);
-
-    boolean edit(Categoria categoria);
-
-    boolean remove(Categoria categoria);
-
-    Categoria find(Object id);
-
-    List<Categoria> findAll();
-
-    List<Categoria> findRange(int desde, int hasta);
-
-    int count();
     
 }

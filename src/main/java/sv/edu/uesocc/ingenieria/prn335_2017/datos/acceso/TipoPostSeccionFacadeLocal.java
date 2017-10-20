@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.TipoPostSeccion;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.TipoPostSeccion;
  * @author juancarlos
  */
 @Local
-public interface TipoPostSeccionFacadeLocal {
+public interface TipoPostSeccionFacadeLocal extends AbstractInterface<TipoPostSeccion>{
 
-    boolean create(TipoPostSeccion tipoPostSeccion);
-
-    boolean edit(TipoPostSeccion tipoPostSeccion);
-
-    boolean remove(TipoPostSeccion tipoPostSeccion);
-
-    TipoPostSeccion find(Object id);
-
-    List<TipoPostSeccion> findAll();
-
-    List<TipoPostSeccion> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

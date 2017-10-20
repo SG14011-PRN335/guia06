@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Paso;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Paso;
  * @author juancarlos
  */
 @Local
-public interface PasoFacadeLocal {
+public interface PasoFacadeLocal extends AbstractInterface<Paso>{
 
-    boolean create(Paso paso);
-
-    boolean edit(Paso paso);
-
-    boolean remove(Paso paso);
-
-    Paso find(Object id);
-
-    List<Paso> findAll();
-
-    List<Paso> findRange(int desde, int hasta);
-
-    int count();
+   
     
 }

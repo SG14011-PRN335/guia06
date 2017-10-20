@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Seccion;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Seccion;
  * @author juancarlos
  */
 @Local
-public interface SeccionFacadeLocal {
+public interface SeccionFacadeLocal extends AbstractInterface<Seccion>{
 
-    boolean create(Seccion seccion);
-
-    boolean edit(Seccion seccion);
-
-    boolean remove(Seccion seccion);
-
-    Seccion find(Object id);
-
-    List<Seccion> findAll();
-
-    List<Seccion> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Usuario;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Usuario;
  * @author juancarlos
  */
 @Local
-public interface UsuarioFacadeLocal {
+public interface UsuarioFacadeLocal extends AbstractInterface<Usuario>{
 
-    boolean create(Usuario usuario);
-
-    boolean edit(Usuario usuario);
-
-    boolean remove(Usuario usuario);
-
-    Usuario find(Object id);
-
-    List<Usuario> findAll();
-
-    List<Usuario> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

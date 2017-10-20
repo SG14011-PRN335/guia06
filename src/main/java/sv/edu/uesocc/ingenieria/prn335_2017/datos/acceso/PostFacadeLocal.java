@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Post;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Post;
  * @author juancarlos
  */
 @Local
-public interface PostFacadeLocal {
+public interface PostFacadeLocal extends AbstractInterface<Post>{
 
-    boolean create(Post post);
-
-    boolean edit(Post post);
-
-    boolean remove(Post post);
-
-    Post find(Object id);
-
-    List<Post> findAll();
-
-    List<Post> findRange(int desde, int hasta);
-
-    int count();
+   
     
 }

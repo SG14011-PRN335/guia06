@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Cometario;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Cometario;
  * @author juancarlos
  */
 @Local
-public interface CometarioFacadeLocal {
+public interface CometarioFacadeLocal extends AbstractInterface<Cometario>{
 
-    boolean create(Cometario cometario);
-
-    boolean edit(Cometario cometario);
-
-    boolean remove(Cometario cometario);
-
-    Cometario find(Object id);
-
-    List<Cometario> findAll();
-
-    List<Cometario> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

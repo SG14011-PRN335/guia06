@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.TipoPaso;
 
@@ -14,20 +13,7 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.TipoPaso;
  * @author juancarlos
  */
 @Local
-public interface TipoPasoFacadeLocal {
+public interface TipoPasoFacadeLocal extends AbstractInterface<TipoPaso>{
 
-    boolean create(TipoPaso tipoPaso);
-
-    boolean edit(TipoPaso tipoPaso);
-
-    boolean remove(TipoPaso tipoPaso);
-
-    TipoPaso find(Object id);
-
-    List<TipoPaso> findAll();
-
-    List<TipoPaso> findRange(int desde, int hasta);
-
-    int count();
     
 }

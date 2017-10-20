@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.TipoSeccion;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.TipoSeccion;
  * @author juancarlos
  */
 @Local
-public interface TipoSeccionFacadeLocal {
+public interface TipoSeccionFacadeLocal extends AbstractInterface<TipoSeccion>{
 
-    boolean create(TipoSeccion tipoSeccion);
-
-    boolean edit(TipoSeccion tipoSeccion);
-
-    boolean remove(TipoSeccion tipoSeccion);
-
-    TipoSeccion find(Object id);
-
-    List<TipoSeccion> findAll();
-
-    List<TipoSeccion> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }

@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso;
 
-import java.util.List;
 import javax.ejb.Local;
 import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Meta;
 
@@ -14,20 +13,8 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.definiciones.Meta;
  * @author juancarlos
  */
 @Local
-public interface MetaFacadeLocal {
+public interface MetaFacadeLocal extends AbstractInterface<Meta>{
 
-    boolean create(Meta meta);
-
-    boolean edit(Meta meta);
-
-    boolean remove(Meta meta);
-
-    Meta find(Object id);
-
-    List<Meta> findAll();
-
-    List<Meta> findRange(int desde, int hasta);
-
-    int count();
+    
     
 }
